@@ -41,7 +41,6 @@ class UsuarioController extends Controller
         $user->email = $request->txtEmail;
         $user->direccion = $request->txtDireccion;
         $user->rut = $request->rut;
-        $user->perfil = rand(1,10000);
         $user->estado = $request->inputGroupEstado;
         $user->save();
         return redirect('/home');
@@ -87,7 +86,6 @@ class UsuarioController extends Controller
         $user->email = $request->txtEmail;
         $user->direccion = $request->txtDireccion;
         $user->rut = $request->rut;
-        $user->perfil = rand(1,10000);
         $user->estado = $request->inputGroupEstado;
         $user->save();
         return redirect('/home');

@@ -20,7 +20,6 @@ class CreateUsuariosTable extends Migration
             $table->string('email');
             $table->string('direccion');
             $table->string('rut');
-            $table->integer('perfil');
             $table->string('estado');
             $table->timestamps();
         });
